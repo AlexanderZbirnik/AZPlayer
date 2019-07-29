@@ -7,23 +7,21 @@
 //
 
 #import "AZViewController.h"
+#import "AZPlayer.h"
 
 @interface AZViewController ()
+
+@property (strong, nonatomic) AZPlayer *player;
 
 @end
 
 @implementation AZViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSURL *remoteUrl = [NSURL URLWithString:@"https://media.louddly.com/podcasts/4d79b3d3-972d-4c6d-9e82-c7269beb20e9/episodes/7953b2ba-7dd4-4bc2-969d-6b68cd3c2868/audio/f5uk2x4d0i4esy88zzbb1v"];
+    self.player = [[AZPlayer alloc] initWithURL:remoteUrl];
+    [self.player play];
 }
 
 @end
