@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "AZPlayer.h"
 
 FOUNDATION_EXPORT double AZPlayerVersionNumber;
 FOUNDATION_EXPORT const unsigned char AZPlayerVersionString[];

@@ -1,22 +1,22 @@
 {
   "name": "AZPlayer",
   "version": "0.1.0",
-  "summary": "A short description of AZPlayer.",
+  "summary": "AZPlayer - audio player for iOS.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/alxzorg@gmail.com/AZPlayer",
+  "homepage": "https://github.com/AlexanderZbirnik/AZPlayer",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "alxzorg@gmail.com": "alxzorg@gmail.com"
+    "Alexander Zbirnik": "alxzorg@gmail.com"
   },
   "source": {
-    "git": "https://github.com/alxzorg@gmail.com/AZPlayer.git",
+    "git": "https://github.com/AlexanderZbirnik/AZPlayer.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
   "source_files": "AZPlayer/Classes/**/*"
 }
