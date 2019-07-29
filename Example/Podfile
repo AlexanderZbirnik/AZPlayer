@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'AZPlayer_Example' do
+  pod 'AZPlayer', :path => '../'
+
+  target 'AZPlayer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
