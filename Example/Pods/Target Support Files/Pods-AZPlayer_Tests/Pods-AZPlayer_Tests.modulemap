@@ -1,0 +1,6 @@
+framework module Pods_AZPlayer_Tests {
+  umbrella header "Pods-AZPlayer_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

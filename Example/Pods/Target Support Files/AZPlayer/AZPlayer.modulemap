@@ -1,0 +1,6 @@
+framework module AZPlayer {
+  umbrella header "AZPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

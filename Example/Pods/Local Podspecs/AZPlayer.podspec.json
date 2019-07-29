@@ -1,0 +1,22 @@
+{
+  "name": "AZPlayer",
+  "version": "0.1.0",
+  "summary": "A short description of AZPlayer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/alxzorg@gmail.com/AZPlayer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "alxzorg@gmail.com": "alxzorg@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/alxzorg@gmail.com/AZPlayer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AZPlayer/Classes/**/*"
+}
