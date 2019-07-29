@@ -54,7 +54,9 @@ static NSString * const AZPlayerKeyPathBufferEmpty = @"playbackBufferEmpty";
 
 - (void)setRate:(float)rate {
     _rate = rate;
-    self.player.rate = _rate;
+    if (_isPlayed) {
+        _player.rate = _rate;
+    }
 }
 
 #pragma mark - Player

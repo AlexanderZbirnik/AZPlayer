@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AZPlayer'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'AZPlayer - audio player for iOS.'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Alexander Zbirnik' => 'alxzorg@gmail.com' }
-  s.source           = { :git => 'https://github.com/AlexanderZbirnik/AZPlayer.git', :tag => "0.1.0" }
+  s.source           = { :git => 'https://github.com/AlexanderZbirnik/AZPlayer.git', :tag => "0.1.1" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'

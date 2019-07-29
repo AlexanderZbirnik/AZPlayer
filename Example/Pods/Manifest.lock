@@ -1,5 +1,5 @@
 PODS:
-  - AZPlayer (0.1.0)
+  - AZPlayer (0.1.1)
 
 DEPENDENCIES:
   - AZPlayer (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AZPlayer: 5c096de4fffe388a3f7e1b8376fc9165a3b247e7
+  AZPlayer: fe1773f27709b6231073d009cff34e8d11e99de3
 
 PODFILE CHECKSUM: 4ba32ace3b364fcb3438554e874028550b6cea95
 
