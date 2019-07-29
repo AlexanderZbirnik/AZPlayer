@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/alxzorg@gmail.com/AZPlayer'
+  s.homepage         = 'https://github.com/AlexanderZbirnik/AZPlayer'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'alxzorg@gmail.com' => 'alxzorg@gmail.com' }
-  s.source           = { :git => 'https://github.com/alxzorg@gmail.com/AZPlayer.git', :tag => s.version.to_s }
+  s.author           = { 'Alexander Zbirnik' => 'alxzorg@gmail.com' }
+  s.source           = { :git => 'https://github.com/AlexanderZbirnik/AZPlayer.git', :tag => "0.1.0" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
