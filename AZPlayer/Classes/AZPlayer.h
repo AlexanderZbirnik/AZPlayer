@@ -31,7 +31,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)play;
 - (void)pause;
 - (void)seekToSeconds:(NSInteger)seconds;
+- (void)seekToSeconds:(NSInteger)seconds completionHandler:(void (^)(BOOL finished))completionHandler;
 - (void)seekToTime:(CMTime)time;
+- (void)seekToTime:(CMTime)time completionHandler:(void (^)(BOOL finished))completionHandler;
 
 @end
 

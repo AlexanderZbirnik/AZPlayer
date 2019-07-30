@@ -82,6 +82,11 @@ static NSString * const AZPlayerKeyPathBufferEmpty = @"playbackBufferEmpty";
     [self seekToTime:time];
 }
 
+- (void)seekToSeconds:(NSInteger)seconds completionHandler:(void (^)(BOOL finished))completionHandler {
+    CMTime time = CMTimeMake(seconds, 1);
+    [self seekToTime:time completionHandler:completionHandler];
+}
+
 - (void)seekToTime:(CMTime)time {
     [self.player.currentItem cancelPendingSeeks];
     if (self.isPlayed) {
@@ -91,6 +96,17 @@ static NSString * const AZPlayerKeyPathBufferEmpty = @"playbackBufferEmpty";
         return;
     }
     [self.player seekToTime:time];
+}
+
+- (void)seekToTime:(CMTime)time completionHandler:(void (^)(BOOL finished))completionHandler {
+    [self.player.currentItem cancelPendingSeeks];
+    if (self.isPlayed) {
+        [self.player pause];
+        [self.player seekToTime:time];
+        [self.player playImmediatelyAtRate:self.rate];
+        return;
+    }
+    [self.player seekToTime:time completionHandler:completionHandler];
 }
 
 #pragma mark - Processing audio
