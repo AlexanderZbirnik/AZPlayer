@@ -35,7 +35,7 @@ static NSString * const AZPlayerKeyPathBufferEmpty = @"playbackBufferEmpty";
         self.asset = [AVAsset assetWithURL:url];
         AVPlayerItem *item = [[AVPlayerItem alloc] initWithAsset:self.asset];
         self.player = [[AVPlayer alloc] initWithPlayerItem:item];
-        self.player.automaticallyWaitsToMinimizeStalling = NO;
+        self.player.automaticallyWaitsToMinimizeStalling = YES;
     }
     return self;
 }
