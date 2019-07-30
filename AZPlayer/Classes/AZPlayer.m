@@ -59,6 +59,10 @@ static NSString * const AZPlayerKeyPathBufferEmpty = @"playbackBufferEmpty";
     }
 }
 
+- (CMTime)duration {
+    return self.player.currentItem.asset.duration;
+}
+
 #pragma mark - Player
 
 - (void)play {

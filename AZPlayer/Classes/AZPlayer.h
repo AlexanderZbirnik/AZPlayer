@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (assign, nonatomic, readonly) BOOL isPlayed;
 @property (assign, nonatomic, readonly) NSInteger currentTime;
+@property (assign, nonatomic, readonly) CMTime duration;
 
 
 - (instancetype)initWithURL:(NSURL *)url;
@@ -36,9 +37,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol AZPlayerDelegate <NSObject>
 
-@optional
-// Change player status 
+@required
+
 - (void)readyToPlay:(AZPlayer *)player;
+
+@optional
+// Change player status
 - (void)failedPlayer:(AZPlayer *)player withError:(NSError *)error;
 - (void)notReadyToPlay:(AZPlayer *)player;
 - (void)play:(AZPlayer *)player withOutStalling:(BOOL)stalling;
