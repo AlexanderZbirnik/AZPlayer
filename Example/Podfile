@@ -8,6 +8,5 @@ target 'AZPlayer_Example' do
   target 'AZPlayer_Tests' do
     inherit! :search_paths
 
-    
   end
 end

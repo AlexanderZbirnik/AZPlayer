@@ -66,14 +66,14 @@ static NSString * const AZPlayerKeyPathBufferEmpty = @"playbackBufferEmpty";
 #pragma mark - Player
 
 - (void)play {
-    self.player.currentItem.audioMix = [self mixAsset:self.asset];
+    //self.player.currentItem.audioMix = [self mixAsset:self.asset];
     [self.player playImmediatelyAtRate:self.rate];
     _isPlayed = YES;
 }
 
 - (void)pause {
     [self.player pause];
-    self.player.currentItem.audioMix = NULL;
+    //self.player.currentItem.audioMix = NULL;
     _isPlayed = NO;
 }
 
@@ -167,14 +167,16 @@ void process(MTAudioProcessingTapRef tap, CMItemCount numberFrames,
              MTAudioProcessingTapFlags flags, AudioBufferList *bufferListInOut,
              CMItemCount *numberFramesOut, MTAudioProcessingTapFlags *flagsOut) {
     
+    NSLog(@"Process the Audio Tap Processor");
+    
     OSStatus err = MTAudioProcessingTapGetSourceAudio(tap, numberFrames, bufferListInOut,
                                                       flagsOut, NULL, numberFramesOut);
     if (err) NSLog(@"Error from GetSourceAudio: %d", (int)err);
     
-    AZPlayer *self = (__bridge AZPlayer *) MTAudioProcessingTapGetStorage(tap);
-    
-    [self changeVolume:bufferListInOut];
-    [self calculateSoundPower:bufferListInOut numberFrames:numberFrames];
+//    AZPlayer *self = (__bridge AZPlayer *) MTAudioProcessingTapGetStorage(tap);
+//
+//    [self changeVolume:bufferListInOut];
+//    [self calculateSoundPower:bufferListInOut numberFrames:numberFrames];
 }
 
 - (void)changeVolume:(AudioBufferList *)bufferListInOut {
